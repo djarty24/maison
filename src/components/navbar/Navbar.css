@@ -1,0 +1,7 @@
+.navlinks-hide {
+    display: none;
+}
+
+.navlinks-show {
+    display: flex;
+}
