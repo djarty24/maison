@@ -7,6 +7,147 @@
     font-family: "PT Sans", sans-serif;
 }
 
-h1, h2, h3 {
+body {
+    padding: 0%;
+    margin: 0;
+}
+
+h1 {
     font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+    margin-bottom: 1rem;
+    
+    @media (min-width: 640px) {
+        font-size: 1.875rem/* 30px */;
+        line-height: 2.25rem/* 36px */;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 2rem/* 36px */;
+        line-height: 2.5rem/* 40px */;
+    }    
+
+    @media (min-width: 1560px) {
+        font-size: 3rem/* 36px */;
+        line-height: 2.5rem/* 40px */;
+    }
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+        font-size: 1.5rem/* 24px */;
+        line-height: 2rem/* 32px */;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.75rem/* 30px */;
+        line-height: 2.25rem/* 36px */;
+    }
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+        font-size: 1.25rem/* 20px */;
+        line-height: 1.75rem/* 28px */;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 1.5rem/* 24px */;
+        line-height: 2rem/* 32px */;
+    }    
+}
+
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem/* 16px */;
+    line-height: 1.5rem/* 24px */;
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+        font-size: 1.125rem/* 18px */;
+        line-height: 1.75rem/* 28px */;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.25rem/* 20px */;
+        line-height: 1.75rem/* 28px */;
+    }    
+}
+
+h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;    
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+        font-size: 1rem/* 16px */;
+        line-height: 1.5rem/* 24px */;    
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.125rem/* 18px */;
+        line-height: 1.75rem/* 28px */;
+    }
+}
+
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+    margin-bottom: 1rem;
+
+    @media (min-width: 640px) {
+        font-size: 0.875rem/* 14px */;
+        line-height: 1.25rem/* 20px */;    
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1rem/* 16px */;
+        line-height: 1.5rem/* 24px */;
+    }
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    color: #5E5E5E;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    font-family: "Raleway", sans-serif;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #39996B;
+    color: #39996B;
+    border-radius: 8px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background-color: #39996B;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
