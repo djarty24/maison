@@ -34,7 +34,7 @@ const Contact = () => {
 				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>Have questions? Feel free to ask!<br />We'll get back to you in 3-4 business days.</p>
 			</div>
 			<div className='w-full flex flex-col items-center pt-5 pb-16'>
-				<form onSubmit={handleSubmit} className="flex flex-col items-center sm:w-2/3 md:w-1/2 lg:w-1/4">
+				<form onSubmit={handleSubmit} className="flex flex-col items-center w-4/5 sm:w-2/3 md:w-1/2 lg:w-1/4">
 					<input
 						type="text"
 						name="name"
