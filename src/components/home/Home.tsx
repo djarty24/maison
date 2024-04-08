@@ -14,7 +14,7 @@ const Home = () => {
 			<img className='w-full lg:hidden py-14' src="/hero-small.png" alt="" />
 			<img className='hidden lg:block pb-16' src="/hero-large.png" alt="" />
 			
-			<div className='p-8 w-full flex flex-col items-center'>
+			<div className='p-8s w-full flex flex-col items-center'>
 				<h2 className='text-center lg:text-3xl'>Our Mission</h2>
 				<p className='text-center pb-4 sm:w-2/3 md:w-1/2 lg:w-5/12'>Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, warmth.</p>
 			</div>
@@ -24,7 +24,7 @@ const Home = () => {
 					<img className='w-1/3 md:h-[50vh] aspect-square object-cover border border-transparent rounded-lg' src="/mission-3.png" alt="" />
 			</div>
 
-			<div className='w-full flex flex-col items-center'>
+			<div className=' pt-8 w-full flex flex-col items-center'>
 				<h2 className='text-center'>Annual Spring Gala</h2>
 				<p className='text-center italic'>Saturday, April 12, 2024 at 9:00pm<br />The Ritz-Carlton at Half-Moon Bay</p>
 				<div className="button"><Link to="/register">Register</Link></div>
