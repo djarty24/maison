@@ -26,7 +26,7 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className="w-full flex flex-col items-center">
+			<div className="w-full flex flex-col items-center pb-8">
 				<h2 className="font-semibold text-center pt-10">Meet the minds behind the <span className="text-[#39996B]">movement</span>.</h2>
 				<div className="sm:w-2/3 md:w-1/2 lg:w-8/12 flex flex-col md:flex-row md:justify-evenly gap-12">
 					<div className="h-fit shadow-xl border rounded-lg my-8">
