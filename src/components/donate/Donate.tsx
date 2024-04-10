@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Donate.css';
 
 function DonationForm() {
 	const [formData, setFormData] = useState({
@@ -39,6 +40,14 @@ function DonationForm() {
 			</div>
 
 			<div className='w-full flex flex-col items-center pt-5 pb-16'>
+                <h4 className='text-left w-4/5 sm:w-2/3 md:w-1/2 mb-5 font-semibold'>Legal Name</h4>
+                <div className='flex flex-col md:flex-row md:justify-between w-4/5 sm:w-2/3 md:w-1/2 mb-5'>
+                    <div className="button-donate w-full lg:w-1/5 text-center">$500</div>
+                    <div className="button-donate w-full lg:w-1/5 text-center">$250</div>
+                    <div className="button-donate w-full lg:w-1/5 text-center">$100</div>
+                    <div className="button-donate w-full lg:w-1/5 text-center">$50</div>
+                    <div className="button-donate w-full lg:w-1/5 text-center">$<input className='outline-none bg-inherit w-3/4 text-base' placeholder=' Custom' type="text" /></div>
+                </div>
 
 				<form onSubmit={handleSubmit} className="flex flex-col items-center w-4/5 sm:w-2/3 md:w-1/2">
 					{/* Legal Name */}
