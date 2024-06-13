@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 
 function RegistrationForm() {
 	const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ function RegistrationForm() {
 		expirationDate: '',
 		cvc: ''
 	});
+	const [selectedPass, setSelectedPass] = useState(null);
 
 	const handleChange = (event: { target: { name: any; value: any; }; }) => {
 		const { name, value } = event.target;
@@ -21,8 +22,11 @@ function RegistrationForm() {
 
 	const handleSubmit = (event: { preventDefault: () => void; }) => {
 		event.preventDefault();
-		// Handle form submission logic here
 		alert("Your form has been submitted!");
+	};
+
+	const selectPass = (pass: string | SetStateAction<null>) => {
+		setSelectedPass(pass);
 	};
 
 	return (
@@ -49,7 +53,7 @@ function RegistrationForm() {
 
 			<div className='my-12 w-4/5 sm:w-2/3 m-auto'>
 	            <div className='flex flex-col lg:flex-row lg:justify-between gap-5'>
-	                <div className='box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center'>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'gold' ? 'bg-green-200' : ''}`} onClick={() => selectPass('gold')}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#D7BA80] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/gold-gradient.svg" alt="" />Gold Guest Pass</div>
 	                        <br />
@@ -59,29 +63,29 @@ function RegistrationForm() {
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Complimentary refreshments</div>
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Complimentary food</div>
 	                        </div>
-	                        <p className='italic text-sm pt-2'>* Some subtext here.</p>
+	                        <p className='italic text-sm pt-2'>.</p>
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className='box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center'>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'platinum' ? 'bg-green-200' : ''}`} onClick={() => selectPass('platinum')}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#929493] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/platinum-gradient.svg" alt="" />Platinum Guest Pass</div>
 	                        <br />
-	                        <h1>$49.99</h1>
+	                        <h1>$99.99</h1>
 	                        <div>
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Named as platinum patron</div>
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Early gala entrance</div>
-	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Reason three</div>
+	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Access to platinum lounge</div>
 	                        </div>
 	                        <p className='italic text-sm pt-2'>* All benefits from gold pass included.</p>
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className='box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center'>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'diamond' ? 'bg-green-200' : ''}`} onClick={() => selectPass('diamond')}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#39996B] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/diamond-gradient.svg" alt="" />Diamond Guest Pass</div>
 	                        <br />
-	                        <h1>$49.99</h1>
+	                        <h1>$139.99</h1>
 	                        <div>
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />Named as diamond patron</div>
 	                            <div className='flex flex-row gap-2 items-center leading-loose'><img className='size-4' src="/star.svg" alt="" />One-on-one meetings</div>
@@ -93,7 +97,6 @@ function RegistrationForm() {
 	                </div>
 	            </div>
 	        </div>
-
 
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h2 className='text-center text-2xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-3xl'>Registration Form</h2>

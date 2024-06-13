@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import './Donate.css';
 
 function DonationForm() {
@@ -17,6 +17,7 @@ function DonationForm() {
 		expirationDate: '',
 		cvc: ''
 	});
+	const [selectedAmount, setSelectedAmount] = useState(null);
 
 	const handleChange = (event: { target: { name: any; value: any; }; }) => {
 		const { name, value } = event.target;
@@ -32,21 +33,43 @@ function DonationForm() {
 		alert("Your form has been submitted!");
 	};
 
+	const handleAmountClick = (amount: string | SetStateAction<null>) => {
+		setSelectedAmount(amount);
+		setFormData(prevData => ({
+			...prevData,
+			donationType: amount
+		}));
+	};
+
 	return (
 		<div>
 			<div className='p-16 pb-0 flex flex-col items-center'>
-				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>Get in Touch</h1>
-				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>Have questions? Feel free to ask!<br />We'll get back to you in 3-4 business days.</p>
+				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>Donate Today</h1>
+				<p className='text-center sm:w-2/3 md:w-[55%]'>Thank you so much for supporting our cause! For a detailed breakdown of how your money is used, please check our <span className='underline text-[#39996B]'>monetary policies</span> page.</p>
 			</div>
 
 			<div className='w-full flex flex-col items-center pt-5 pb-16'>
-                <h4 className='text-left w-4/5 sm:w-2/3 md:w-1/2 mb-5 font-semibold'>Legal Name</h4>
+                <h4 className='text-left w-4/5 sm:w-2/3 md:w-1/2 mb-5 font-semibold'>Donation Amount</h4>
                 <div className='flex flex-col md:flex-row md:justify-between w-4/5 sm:w-2/3 md:w-1/2 mb-5'>
-                    <div className="button-donate w-full lg:w-1/5 text-center">$500</div>
-                    <div className="button-donate w-full lg:w-1/5 text-center">$250</div>
-                    <div className="button-donate w-full lg:w-1/5 text-center">$100</div>
-                    <div className="button-donate w-full lg:w-1/5 text-center">$50</div>
-                    <div className="button-donate w-full lg:w-1/5 text-center">$<input className='outline-none bg-inherit w-3/4 text-base' placeholder=' Custom' type="text" /></div>
+                    {['500', '250', '100', '50'].map(amount => (
+						<div
+							key={amount}
+							className={`button-donate w-full lg:w-1/5 text-center ${selectedAmount === amount ? 'selected' : ''}`}
+							onClick={() => handleAmountClick(amount)}
+						>
+							${amount}
+						</div>
+					))}
+					<div className={`button-donate w-full lg:w-1/5 text-center ${selectedAmount && !['500', '250', '100', '50'].includes(selectedAmount) ? 'selected' : ''}`}>
+						$
+						<input
+							className='outline-none bg-inherit w-3/4 text-base'
+							placeholder=' Custom'
+							type="text"
+							value={selectedAmount && !['500', '250', '100', '50'].includes(selectedAmount) ? selectedAmount : ''}
+							onChange={(e) => handleAmountClick(e.target.value)}
+						/>
+					</div>
                 </div>
 
 				<form onSubmit={handleSubmit} className="flex flex-col items-center w-4/5 sm:w-2/3 md:w-1/2">
@@ -58,7 +81,7 @@ function DonationForm() {
 							name="legalFirstName"
 							value={formData.legalFirstName}
 							onChange={handleChange}
-							placeholder="Legal First Name"
+							placeholder="First Name"
 							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
 							required
 						/>
@@ -67,7 +90,7 @@ function DonationForm() {
 							name="legalLastName"
 							value={formData.legalLastName}
 							onChange={handleChange}
-							placeholder="Legal Last Name"
+							placeholder="Last Name"
 							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
 							required
 						/>
@@ -178,7 +201,7 @@ function DonationForm() {
 					</div>
 
 					{/* Submit Button */}
-					<div className="button button-inverse" onClick={() => alert("Your form has been submitted!")}>Submit</div>
+					<button className="button button-inverse">Submit</button>
 				</form>
 			</div>
 		</div>
