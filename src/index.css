@@ -125,8 +125,18 @@ h6 {
 p {
     font-family: "PT Sans", sans-serif;
     color: #5E5E5E;
-    font-size: 1.125rem;
     margin-bottom: 1rem;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    @media (min-width: 640px) {
+        font-size: 1.125rem/* 18px */;
+        line-height: 1.75rem/* 28px */;
+    }    
+    @media (min-width: 768px) {
+        font-size: 1.25rem/* 20px */;
+        line-height: 1.75rem/* 28px */;
+    }
+    
 }
 
 .button {
