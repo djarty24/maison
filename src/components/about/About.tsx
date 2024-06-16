@@ -3,7 +3,7 @@ const About = () => {
 		<div>
 			<div className='pt-16 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>About Us</h1>
-				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>We want to provide everyone a place to live, and laugh - so that they can be happier and healthier humans.</p>
+				<p className='text-center px-8  sm:w-2/3 md:w-1/2 lg:w-5/12'>We want to provide everyone a place to live, and laugh - so that they can be happier and healthier humans.</p>
 			</div>
 
 			<div className='w-full flex flex-col items-center'>
