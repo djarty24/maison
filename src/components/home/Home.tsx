@@ -53,7 +53,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<img src="/stats.png" alt="" />
+			<img className='hidden md:block' src="/stats.png" alt="" />
 		</div>
 	)
 }

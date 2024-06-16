@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import './Donate.css';
 
 function DonationForm() {
@@ -17,7 +17,7 @@ function DonationForm() {
 		expirationDate: '',
 		cvc: ''
 	});
-	const [selectedAmount, setSelectedAmount] = useState(null);
+	const [selectedAmount, setSelectedAmount] = useState<string | null>(null);
 
 	const handleChange = (event: { target: { name: any; value: any; }; }) => {
 		const { name, value } = event.target;
@@ -33,7 +33,7 @@ function DonationForm() {
 		alert("Your form has been submitted!");
 	};
 
-	const handleAmountClick = (amount: string | SetStateAction<null>) => {
+	const handleAmountClick = (amount: string) => {
 		setSelectedAmount(amount);
 		setFormData(prevData => ({
 			...prevData,

@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from 'react';
+import { useState } from 'react';
 
 function RegistrationForm() {
 	const [formData, setFormData] = useState({
@@ -10,7 +10,7 @@ function RegistrationForm() {
 		expirationDate: '',
 		cvc: ''
 	});
-	const [selectedPass, setSelectedPass] = useState(null);
+	const [selectedPass, setSelectedPass] = useState<string | null>(null);
 
 	const handleChange = (event: { target: { name: any; value: any; }; }) => {
 		const { name, value } = event.target;
@@ -25,7 +25,7 @@ function RegistrationForm() {
 		alert("Your form has been submitted!");
 	};
 
-	const selectPass = (pass: string | SetStateAction<null>) => {
+	const selectPass = (pass: string) => {
 		setSelectedPass(pass);
 	};
 
