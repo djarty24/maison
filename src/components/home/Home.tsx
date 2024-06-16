@@ -30,7 +30,7 @@ const Home = () => {
 				<div className="button"><Link to="/register">Register</Link></div>
 				
 				<div className='lg:w-3/4 px-8 pt-10'>
-					<div className='flex flex-col lg:flex-row gap-12 items-center'>
+					<div className='flex flex-col-reverse lg:flex-row gap-12 items-center'>
 						<div className='md:w-1/2'>
 							<h1 className='text-center md:text-left'>Support Our Cause</h1>
 							<p className='text-center md:text-left'>Every spring, Maison hosts an annual gala to help support the creation of new mobile homes. With funding from sponsors and attendees, we hope to increase both the number of homes established, as well as expand to more locations.</p>
@@ -38,10 +38,10 @@ const Home = () => {
 						<img className='md:w-1/2 border border-transparent rounded-xl' src="/gala-1.jpg" alt="" />
 					</div>
 
-					<div className='flex flex-col lg:flex-row-reverse gap-12 items-center py-8'>
+					<div className='flex flex-col-reverse lg:flex-row-reverse gap-12 items-center py-8'>
 						<div className='md:w-1/2'>
 							<h1>What You'll Experience</h1>
-							<ul className='list-disc'>
+							<ul className='list-disc text-sm sm:text-lg md:text-xl text-[#5E5E5E]'>
 								<li>Complementary food and drinks</li>
 								<li>Conversing organization officials</li>
 								<li>Listen to a group of acclaimed guest speakers</li>

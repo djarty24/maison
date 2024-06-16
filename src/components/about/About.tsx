@@ -8,7 +8,7 @@ const About = () => {
 
 			<div className='w-full flex flex-col items-center'>
 				<div className='lg:w-3/4 px-8 pt-8'>
-					<div className='flex flex-col-reverse lg:flex-row gap-12 items-center pb-10'>
+					<div className='flex flex-col-reverse lg:flex-row gap-8 items-center'>
 						<div className='md:w-1/2'>
 							<h1 className="text-center lg:text-left">Who We Are</h1>
 							<p className="text-center lg:text-left">At Maison, we’re more than just a name. We’re a team of passionate individuals committed to making a difference. Our mission is to provide shelter and protection for poverty-stricken individuals or families. We’re dedicated to serving our community with our love, affection, and most importantly, warmth.</p>
@@ -16,7 +16,7 @@ const About = () => {
 						<img className='md:w-1/2 aspect-video object-cover border border-transparent rounded-xl' src="/about-1.jpg" alt="" />
 					</div>
 
-					<div className='flex flex-col-reverse lg:flex-row-reverse gap-12 items-center py-10'>
+					<div className='flex flex-col-reverse lg:flex-row-reverse gap-12 items-center pt-8'>
 						<div className='md:w-1/2'>
 							<h1 className="text-center lg:text-left">Our Approach</h1>
 							<p className="text-center lg:text-left">From our products and services to our relationships with residents, partners, and the community, we uphold a standard of excellence that is unwavering.</p>
