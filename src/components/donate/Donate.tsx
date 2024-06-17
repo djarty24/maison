@@ -42,7 +42,7 @@ function DonationForm() {
 	};
 
 	return (
-		<div className='px-2'>
+		<div className='px-2 mt-24'>
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>Donate Today</h1>
 				<p className='text-center text-sm sm:text-lg md:text-xl sm:w-2/3 md:w-[55%]'>Thank you so much for supporting our cause! For a detailed breakdown of how your money is used, please check our <span className='underline text-[#39996B]'>monetary policies</span> page.</p>

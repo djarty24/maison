@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
 	return (
-		<div>
+		<div className='mt-24'>
 			<div className="w-full h-[88vh] relative">
 				<img className="w-full h-full object-cover absolute" src="about-header.png" alt="" />
 				<div className="absolute z-2 w-full h-[88vh] flex flex-col items-center justify-center">

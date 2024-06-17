@@ -56,7 +56,7 @@ function RegistrationForm() {
 	};
 
 	return (
-		<div>
+		<div className='mt-24'>
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 lg:w-5/12 lg:text-4xl'>Register for Our Spring Gala</h1>
 				<p className='text-center sm:w-2/3 md:w-[55%]'>Thank you so much for supporting our cause! For a detailed breakdown of how your money is used, please check our <span className='underline text-[#39996B]'>monetary policies</span> page.<br /><br />After filling out the registration form, all attendees will receive an email regarding information about the event.</p>

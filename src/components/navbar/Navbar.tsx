@@ -18,7 +18,7 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <nav style={{ fontFamily: "'Raleway', sans-serif", zIndex: "99" }}>
+        <nav style={{ fontFamily: "'Raleway', sans-serif", zIndex: "99", position: "fixed", top: 0, width: "100%", backgroundColor: "white" }}>
             <div className='flex items-center justify-between p-4 md:py-6 md:px-10 text-xl'>
                 <NavItem to="/" currentPath={location.pathname}>
                     <div className='flex flex-row gap-5 h-fit items-center'>

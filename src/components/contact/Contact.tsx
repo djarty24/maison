@@ -28,7 +28,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div>
+		<div className='mt-24'>
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>Get in Touch</h1>
 				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>Have questions? Feel free to ask!<br />We'll get back to you in 3-4 business days.</p>
