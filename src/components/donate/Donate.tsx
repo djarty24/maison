@@ -50,7 +50,7 @@ function DonationForm() {
 
 			<div className='w-full flex flex-col items-center pt-5 pb-16'>
                 <h4 className='text-left w-4/5 sm:w-2/3 md:w-1/2 mb-5 font-semibold'>Donation Amount</h4>
-                <div className='flex flex-col md:flex-row md:justify-between w-4/5 sm:w-2/3 md:w-1/2 mb-5'>
+                <div className='flex flex-col lg:flex-row md:justify-between w-4/5 sm:w-2/3 md:w-1/2 mb-5'>
                     {['500', '250', '100', '50'].map(amount => (
 						<div
 							key={amount}
@@ -82,7 +82,7 @@ function DonationForm() {
 							value={formData.legalFirstName}
 							onChange={handleChange}
 							placeholder="First Name"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 						<input
@@ -91,7 +91,7 @@ function DonationForm() {
 							value={formData.legalLastName}
 							onChange={handleChange}
 							placeholder="Last Name"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 					</div>
@@ -105,7 +105,7 @@ function DonationForm() {
 							value={formData.email}
 							onChange={handleChange}
 							placeholder="Email"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 						<input
@@ -114,7 +114,7 @@ function DonationForm() {
 							value={formData.phoneNumber}
 							onChange={handleChange}
 							placeholder="Phone Number"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 					</div>
@@ -127,7 +127,7 @@ function DonationForm() {
 						value={formData.streetAddressLine1}
 						onChange={handleChange}
 						placeholder="Street Address Line 1"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 						required
 					/>
 					<input
@@ -136,7 +136,7 @@ function DonationForm() {
 						value={formData.streetAddressLine2}
 						onChange={handleChange}
 						placeholder="Street Address Line 2"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 					/>
 					<div className="flex flex-col w-full md:flex-row md:gap-5">
 						<input
@@ -145,7 +145,7 @@ function DonationForm() {
 							value={formData.city}
 							onChange={handleChange}
 							placeholder="City"
-							className="md:w-1/2  italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2  italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 						<input
@@ -154,7 +154,7 @@ function DonationForm() {
 							value={formData.country}
 							onChange={handleChange}
 							placeholder="Country"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 					</div>
@@ -164,7 +164,7 @@ function DonationForm() {
 						value={formData.postalCode}
 						onChange={handleChange}
 						placeholder="Postal Code"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 						required
 					/>
 
@@ -176,7 +176,7 @@ function DonationForm() {
 						value={formData.cardNumber}
 						onChange={handleChange}
 						placeholder="Card Number"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 						required
 					/>
 					<div className="flex flex-col w-full md:flex-row md:gap-5 mb-7">
@@ -186,7 +186,7 @@ function DonationForm() {
 							value={formData.expirationDate}
 							onChange={handleChange}
 							placeholder="MM/YY"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 						<input
@@ -195,7 +195,7 @@ function DonationForm() {
 							value={formData.cvc}
 							onChange={handleChange}
 							placeholder="CVC"
-							className="md:w-1/2 italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+							className="md:w-1/2 italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 							required
 						/>
 					</div>
