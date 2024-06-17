@@ -38,7 +38,7 @@ const About = () => {
 						<p className="text-center p-4"><span className="text-black font-semibold">Meghna Shenoy</span><br /><span className="text-[#39996B]">Co-Founder</span></p>
 					</div>
 					<div className="h-fit shadow-xl border rounded-lg my-8">
-						<img className="border rounded-t-lg" src="/sruthi.png" alt="" />
+						<img className="border rounded-t-lg" src="/anoushka.png" alt="" />
 						<p className="text-center p-4"><span className="text-black font-semibold">Anoushka Rathi</span><br /><span className="text-[#39996B]">Co-Founder</span></p>
 					</div>
 				</div>
