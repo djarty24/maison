@@ -29,11 +29,37 @@ function RegistrationForm() {
 		setSelectedPass(pass);
 	};
 
+	const getBorderColor = (pass: string | null) => {
+		switch (pass) {
+			case 'gold':
+				return '#D7BA80';
+			case 'platinum':
+				return '#929493';
+			case 'diamond':
+				return '#39996B';
+			default:
+				return 'transparent';
+		}
+	};
+
+	const getSelectedPassText = () => {
+		switch (selectedPass) {
+			case 'gold':
+				return 'Gold Guest Pass';
+			case 'platinum':
+				return 'Platinum Guest Pass';
+			case 'diamond':
+				return 'Diamond Guest Pass';
+			default:
+				return 'No Pass Selected';
+		}
+	};
+
 	return (
 		<div>
 			<div className='p-16 pb-0 flex flex-col items-center'>
-				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>Register for Our Spring Gala</h1>
-				<p className='text-center text-sm sm:w-2/3 md:w-[55%]'>Thank you so much for supporting our cause! For a detailed breakdown of how your money is used, please check our <span className='underline text-[#39996B]'>monetary policies</span> page.<br /><br />After filling out the registration form, all attendees will receive an email regarding information about the event.</p>
+				<h1 className='text-center text-3xl sm:w-2/3 lg:w-5/12 lg:text-4xl'>Register for Our Spring Gala</h1>
+				<p className='text-center sm:w-2/3 md:w-[55%]'>Thank you so much for supporting our cause! For a detailed breakdown of how your money is used, please check our <span className='underline text-[#39996B]'>monetary policies</span> page.<br /><br />After filling out the registration form, all attendees will receive an email regarding information about the event.</p>
 			</div>
 
 			<div className='m-auto bg-white shadow-xl w-4/5 sm:w-2/3 my-8 p-6 border border-gray-100 rounded-xl flex flex-col lg:flex-row justify-evenly gap-5'>
@@ -53,7 +79,7 @@ function RegistrationForm() {
 
 			<div className='my-12 w-4/5 sm:w-2/3 m-auto'>
 	            <div className='flex flex-col lg:flex-row lg:justify-between gap-5'>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'gold' ? 'bg-green-200' : ''}`} onClick={() => selectPass('gold')}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'gold' ? 'bg-green-200' : ''}`} onClick={() => selectPass('gold')} style={{ borderColor: selectedPass === 'gold' ? '#D7BA80' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#D7BA80] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/gold-gradient.svg" alt="" />Gold Guest Pass</div>
 	                        <br />
@@ -67,7 +93,7 @@ function RegistrationForm() {
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'platinum' ? 'bg-green-200' : ''}`} onClick={() => selectPass('platinum')}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'platinum' ? 'bg-green-200' : ''}`} onClick={() => selectPass('platinum')} style={{ borderColor: selectedPass === 'platinum' ? '#929493' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#929493] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/platinum-gradient.svg" alt="" />Platinum Guest Pass</div>
 	                        <br />
@@ -81,7 +107,7 @@ function RegistrationForm() {
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border border-transparent rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'diamond' ? 'bg-green-200' : ''}`} onClick={() => selectPass('diamond')}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'diamond' ? 'bg-green-200' : ''}`} onClick={() => selectPass('diamond')} style={{ borderColor: selectedPass === 'diamond' ? '#39996B' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#39996B] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/diamond-gradient.svg" alt="" />Diamond Guest Pass</div>
 	                        <br />
@@ -100,10 +126,11 @@ function RegistrationForm() {
 
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h2 className='text-center text-2xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-3xl'>Registration Form</h2>
-				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-[40%]'>Thank you so much for supporting our cause! We promise— this is the last step! Please fill out this registration form so we can contact you prior to the event as well as process your transaction.</p>
+                <p className="text-center" style={{ borderColor: getBorderColor(selectedPass), borderWidth: '2px', borderStyle: 'solid', borderRadius: '8px', padding: '8px', marginBottom: '16px' }}>{getSelectedPassText()}</p>
+				<p className='text-center sm:w-2/3 lg:w-[40%]'>Thank you so much for supporting our cause! We promise— this is the last step! Please fill out this registration form so we can contact you prior to the event as well as process your transaction.</p>
 			</div>
 
-			<div className='flex flex-col items-center pt-5 pb-16 m-auto w-4/5 sm:w-2/3 md:w-1/2 lg:w-[35%]'>
+			<div className='flex flex-col items-center pt-5 pb-16 m-auto w-4/5 sm:w-2/3 lg:w-[35%]'>
 				<form onSubmit={handleSubmit} className="flex flex-col items-center w-full">
 					<div className="flex flex-row justify-evenly w-full">
 						<input
