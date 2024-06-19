@@ -50,14 +50,14 @@ const About = () => {
 				<h1 className='text-white'>Meet the Team</h1>
 				<div className='p-16 bg-white'>
 					<div>
-						<img src="revati.png" alt="" />
+						{/* <img src="revati.png" alt="" />
 						<h3>Revati Tambe</h3>
 						<h4 className='text-[#39996B] font-semibold'>Co-Founder</h4>
 						<p style={{fontFamily: 'Raleway'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div className='flex flex-row gap-3 my-5'>
 							<TwitterLogoIcon width="20" height="20" />
 							<LinkedInLogoIcon width="20" height="20" />
-                        </div>
+                        </div> */}
 					</div>
 				</div>
 			</div>
