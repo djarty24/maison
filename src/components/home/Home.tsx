@@ -5,7 +5,7 @@ const Home = () => {
 		<div className='mt-24'>
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>A commitment to providing homes for all.</h1>
-				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>At Maison, our mission is to create living spaces for those without a place to stay. We create eco-friendly, heated, mobile homes for people needing a quick rest stop, completely free to use.</p>
+				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>At Maison, our mission is to create living spaces for those without a place to stay. We create eco-friendly, heated, mobile homes for people needing a quick rest stop, free to use.</p>
 				<div className='flex flex-col-reverse items-center md:flex-row'>
 					<div className="button"><Link to={"/about"}>Read More</Link></div>
 					<div className="button"><Link to={"/register"}>Join Us</Link></div>
