@@ -36,7 +36,7 @@ const About = () => {
 					<h2>Questions? <span className='text-[#39996B]'>Contact Us!</span></h2>
 				</div>
 			</div>
-			<div className='px-8 pt-8 md:p-16 md:pb-0 flex flex-row justify-between lg:-mb-32 xl:-mb-64'>
+			<div className='px-8 pt-8 md:p-16 md:pb-0 flex flex-row justify-between lg:-mb-32 xl:-mb-36'>
 				<div className='text-center lg:text-left lg:w-1/2'>
 					<h2 className='font-normal'>We’re here to get as many people <span className='text-[#39996B] font-semibold'>secure</span> as possible</h2>
 					<p>At Maison, we're more than just a name. We're a team of passionate individuals committed to making a <span className='text-[#39996B] font-semibold'>difference</span>.<br /><br />Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, <span className='text-[#39996B] font-semibold'>warmth</span>.</p>
