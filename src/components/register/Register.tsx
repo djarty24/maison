@@ -79,7 +79,7 @@ function RegistrationForm() {
 
 			<div className='my-12 w-4/5 sm:w-2/3 m-auto'>
 	            <div className='flex flex-col lg:flex-row lg:justify-between gap-5'>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'gold' ? 'bg-green-200' : ''}`} onClick={() => selectPass('gold')} style={{ borderColor: selectedPass === 'gold' ? '#D7BA80' : 'transparent' }}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'gold' ? 'bg-green-50' : ''}`} onClick={() => selectPass('gold')} style={{ borderColor: selectedPass === 'gold' ? '#D7BA80' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#D7BA80] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/gold-gradient.svg" alt="" />Gold Guest Pass</div>
 	                        <br />
@@ -93,7 +93,7 @@ function RegistrationForm() {
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'platinum' ? 'bg-green-200' : ''}`} onClick={() => selectPass('platinum')} style={{ borderColor: selectedPass === 'platinum' ? '#929493' : 'transparent' }}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'platinum' ? 'bg-green-50' : ''}`} onClick={() => selectPass('platinum')} style={{ borderColor: selectedPass === 'platinum' ? '#929493' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#929493] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/platinum-gradient.svg" alt="" />Platinum Guest Pass</div>
 	                        <br />
@@ -107,7 +107,7 @@ function RegistrationForm() {
 	                    </div>
 	                    <div className="m-auto button">Select</div>
 	                </div>
-	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'diamond' ? 'bg-green-200' : ''}`} onClick={() => selectPass('diamond')} style={{ borderColor: selectedPass === 'diamond' ? '#39996B' : 'transparent' }}>
+	                <div className={`box-shadow px-8 py-8 md:py-5 border-2 rounded-xl flex flex-col gap-3 items-center ${selectedPass === 'diamond' ? 'bg-green-50' : ''}`} onClick={() => selectPass('diamond')} style={{ borderColor: selectedPass === 'diamond' ? '#39996B' : 'transparent' }}>
 	                    <div>
 	                        <div style={{ fontFamily: 'Raleway, sans-serif' }} className='text-[#39996B] flex flex-row items-center gap-2 font-medium'><img className='size-8' src="/radial-gradients/diamond-gradient.svg" alt="" />Diamond Guest Pass</div>
 	                        <br />

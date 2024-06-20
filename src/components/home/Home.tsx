@@ -40,7 +40,7 @@ const Home = () => {
 			<div className='w-full flex flex-col items-center py-8'>
 				<h2 className='text-center'>Annual Spring Gala</h2>
 				<p className='text-center italic'>Saturday, July 1, 2024 at 9:00pm<br />The Ritz-Carlton at Half-Moon Bay</p>
-				<div className="button"><Link to="/register">Register</Link></div>
+				{/* <div className="button"><Link to="/register">Register</Link></div> */}
 				<div className='flex flex-col items-center lg:flex-row lg:w-2/3 p-8 gap-8 md:w-3/4'>
 					<div className='flex flex-col md:items-center lg:items-start justify-between'>
 						<h3 className='text-center lg:text-left'>Support Our Cause</h3>
@@ -59,20 +59,20 @@ const Home = () => {
 							<div style={{ fontFamily: 'Raleway' }} className="w-fit hover:font-semibold hover:bg-[#39996B] hover:text-white text-xl bg-white font-medium border border-solid border-[#39996B] text-[#39996B] rounded-lg py-1 px-4 transition-colors duration-500 text-center"><Link to="/register">Register</Link></div>
 						</div>
 					</div>
-					<img className='rounded-lg lg:w-1/2 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]' src="gala-2.webp" alt="" />
+					<img className='rounded-lg lg:w-1/2 shadow-[20px_20px_rgba(242,_185,_92,_1)]' src="gala-2.webp" alt="" />
 
 				</div>
 				<div className='hidden sm:flex py-8 sm:flex-col mx-20 md:m-0 md:flex-row md:w-2/3 md:gap-4 lg:gap-16'>
-					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-10 rounded-xl shadow-2xl gap-5'>
-						<img src="/benefits-1.svg" alt="" />
+					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+						<img src="/food.png" alt="" />
 						<p className='text-center'>Complementary food and drinks</p>
 					</div>
-					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-10 rounded-xl shadow-2xl gap-5'>
-						<img src="/benefits-2.svg" alt="" />
+					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+						<img src="/homeless.png" alt="" />
 						<p className='text-center'>Meet with experts & advocates</p>
 					</div>
-					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-10 rounded-xl shadow-2xl gap-5'>
-						<img className='filter grayscale' src="/benefits-3.svg" alt="" />
+					<div className='aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+						<img className='filter grayscale' src="/people.png" alt="" />
 						<p className='text-center'>Learn about homelessness today</p>
 					</div>
 				</div>

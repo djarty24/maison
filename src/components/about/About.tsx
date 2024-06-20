@@ -13,7 +13,7 @@ const About = () => {
 					<h1 className="font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white opacity-55">This is Maison.</h1>
 				</div>
 			</div>
-			<div className='flex flex-col p-8 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
+			<div className='flex flex-col p-20 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
 				<h2 className='border-b-2 md:border-b-0 md:border-r-2 border-black md:w-1/3 md:h-auto flex items-center'>Our Vision</h2>
 				<div className='md:w-1/3'>
 					<h2 className='text-[#39996B]'>For the People</h2>
@@ -29,7 +29,7 @@ const About = () => {
 				<div style={{ fontFamily: 'Raleway' }} className="m-0 w-fit h-fit hover:font-semibold hover:border-white hover:bg-[#2F261B] hover:text-white text-xl bg-white font-medium border-2 border-solid border-[#2F261B] text-[#2F261B] rounded-lg py-1 px-4 transition-colors duration-500 text-center"><Link to="/register">Register</Link></div>
 			</div>
 			<div className='p-8 flex flex-col lg:flex-row gap-16 md:justify-evenly lg:p-16 bg-[#FFF2DB] lg:m-auto'>
-				<img src="about-mission.png" className='rounded-lg lg:w-1/2 aspect-video object-cover shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]' alt="" />
+				<img src="about-mission.png" className='rounded-lg lg:w-1/2 aspect-video object-cover shadow-[-20px_20px_rgba(242,_185,_92,_1)]' alt="" />
 				<div className='lg:text-left text-center lg:w-1/2 lg:flex lg:flex-col lg:justify-evenly'>
 					<h2>We build <span className='text-[#39996B]'>one home at a time.</span></h2>
 					<p>From our products and services to our relationships with residents, partners, and the community, we uphold a standard of excellence that is unwavering. At Maison, our commitment runs deep, shaping every aspect of our work. We are steadfast in our dedication to our core principles, which serve as the foundation of our identity.</p>
@@ -38,7 +38,7 @@ const About = () => {
 			</div>
 			<div className='p-8 md:p-16'>
 				<div className='text-center lg:text-left'>
-					<h2 className='font-normal'>We’re here to get as many people <span className='text-[#39996B] font-semibold'>secure</span> as possible</h2>
+					<h2 className='font-normal'>We’re here to get as many people <span className='text-[#39996B] font-semibold'>moving</span> as possible</h2>
 					<p>At Maison, we're more than just a name. We're a team of passionate individuals committed to making a <span className='text-[#39996B] font-semibold'>difference</span>.<br /><br />Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, <span className='text-[#39996B] font-semibold'>warmth</span>.</p>
 				</div>
 			</div>
