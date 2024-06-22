@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+	
 	return (
 		<div className='mt-24'>
 			<div className='p-16 pb-0 flex flex-col items-center'>
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>A commitment to providing homes for all.</h1>
 				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>At Maison, our mission is to create living spaces for those without a place to stay. We create eco-friendly, heated, mobile homes for people needing a quick rest stop, free to use.</p>
 				<div className='flex flex-col-reverse items-center md:flex-row'>
-					<div className="button"><Link to={"/about"}>Read More</Link></div>
-					<div className="button"><Link to={"/register"}>Join Us</Link></div>
+					<button className="button" onClick={() => { window.location.href = '/about'; }}>Read More</button>
+					<button className="button" onClick={() => { window.location.href = '/register'; }}>Join Us</button>
+					{/* <div className="button"><Link to={"/register"}>Join Us</Link></div> */}
 				</div>
 			</div>
 			<img className='w-full lg:hidden py-14' src="/hero-small.png" alt="" />
@@ -56,7 +58,7 @@ const Home = () => {
 							</div>
 						</div>
 						<div className='w-full lg:flex items-center justify-center lg:justify-start pt-6 hidden'>
-							<div style={{ fontFamily: 'Raleway' }} className="w-fit hover:font-semibold hover:bg-[#39996B] hover:text-white text-xl bg-white font-medium border border-solid border-[#39996B] text-[#39996B] rounded-lg py-1 px-4 transition-colors duration-500 text-center"><Link to="/register">Register</Link></div>
+						<button className="button" onClick={() => { window.location.href = '/register'; }}>Register</button>
 						</div>
 					</div>
 					<img className='rounded-lg lg:w-1/2 shadow-[20px_20px_rgba(242,_185,_92,_1)]' src="gala-2.webp" alt="" />
