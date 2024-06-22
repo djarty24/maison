@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	
@@ -8,8 +8,10 @@ const Home = () => {
 				<h1 className='text-center text-3xl sm:w-2/3 md:w-1/2 lg:w-5/12 lg:text-4xl'>A commitment to providing homes for all.</h1>
 				<p className='text-center sm:w-2/3 md:w-1/2 lg:w-5/12'>At Maison, our mission is to create living spaces for those without a place to stay. We create eco-friendly, heated, mobile homes for people needing a quick rest stop, free to use.</p>
 				<div className='flex flex-col-reverse items-center md:flex-row'>
-					<button className="button" onClick={() => { window.location.href = '/about'; }}>Read More</button>
-					<button className="button" onClick={() => { window.location.href = '/register'; }}>Join Us</button>
+                    <Link to={'/about'}><div className='button'>Read More</div></Link>
+                    <Link to={'/register'}><div className='button'>Join Us</div></Link>
+                    {/* <button className="button" onClick={() => { window.location.href = '/about'; }}>Read More</button>
+					<button className="button" onClick={() => { window.location.href = '/register'; }}>Join Us</button> */}
 					{/* <div className="button"><Link to={"/register"}>Join Us</Link></div> */}
 				</div>
 			</div>
