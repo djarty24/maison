@@ -68,15 +68,15 @@ const Home = () => {
 
 				</div>
 				<div className='hidden sm:flex py-8 sm:flex-col mx-20 md:m-0 md:flex-row md:w-2/3 md:gap-4 lg:gap-16'>
-					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-lg shadow-2xl gap-5'>
 						<img src="/food.png" alt="" />
 						<p className='text-center'>Complementary food and drinks</p>
 					</div>
-					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-lg shadow-2xl gap-5'>
 						<img src="/homeless.png" alt="" />
 						<p className='text-center'>Meet with experts & advocates</p>
 					</div>
-					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-xl shadow-2xl gap-5'>
+					<div className='bg-[#F2FCF7] aspect-square items-center flex flex-col md:w-1/3 p-4 lg:p-20 rounded-lg shadow-2xl gap-5'>
 						<img className='filter grayscale' src="/people.png" alt="" />
 						<p className='text-center'>Learn about homelessness today</p>
 					</div>
