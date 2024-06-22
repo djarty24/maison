@@ -26,7 +26,7 @@ const About = () => {
 			</div>
 			<div className='bg-[#2F261B] p-8 flex flex-col md:flex-row md:justify-between items-center gap-5'>
 				<h2 className='text-center md:text-left text-white text-xl md:text-3xl lg:text-5xl m-0'>Join us in ensuring <span className="italic">everyone</span> has a home.</h2>
-				<div style={{ fontFamily: 'Raleway' }} className="m-0 w-fit h-fit hover:font-semibold hover:border-white hover:bg-[#2F261B] hover:text-white text-xl bg-white font-medium border-2 border-solid border-[#2F261B] text-[#2F261B] rounded-lg py-1 px-4 transition-colors duration-500 text-center"><Link to="/register">Register</Link></div>
+				<Link to="/register"><div style={{ fontFamily: 'Raleway' }} className="m-0 w-fit h-fit hover:font-semibold hover:border-white hover:bg-[#2F261B] hover:text-white text-xl bg-white font-medium border-2 border-solid border-[#2F261B] text-[#2F261B] rounded-lg py-1 px-4 transition-colors duration-500 text-center">Register</div></Link>
 			</div>
 			<div className='p-8 flex flex-col lg:flex-row gap-16 md:justify-evenly lg:p-16 bg-[#FFF2DB] lg:m-auto'>
 				<img src="about-mission.png" className='rounded-lg lg:w-1/2 aspect-video object-cover shadow-[-20px_20px_rgba(242,_185,_92,_1)]' alt="" />
