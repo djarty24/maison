@@ -13,7 +13,7 @@ const About = () => {
 					<h1 className="font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white opacity-55">This is Maison.</h1>
 				</div>
 			</div>
-			<div className='flex flex-col p-8 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
+			<div className='bg-[#F2FCF7] flex flex-col p-8 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
 				<h2 className='border-b-2 md:border-b-0 md:border-r-2 border-black md:w-1/3 md:h-auto flex items-center'>Our Vision</h2>
 				<div className='md:w-1/3'>
 					<h2 className='text-[#39996B]'>For the People</h2>
