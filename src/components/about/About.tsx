@@ -42,7 +42,7 @@ const About = () => {
 					<p>At Maison, we're more than just a name. We're a team of passionate individuals committed to making a <span className='text-[#39996B] font-semibold'>difference</span>.<br /><br />Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, <span className='text-[#39996B] font-semibold'>warmth</span>.</p>
 				</div>
 				{/* <img className='hidden lg:w-1/3 lg:block' src="/mobile-home.png" alt="" /> */}
-				<img src="mobile-home.png" className='rounded-lg lg:w-1/3 aspect-video object-cover shadow-[10px_10px_rgba(57,_153,_103,_1)]' alt="" />
+				<img src="mobile-home.png" className='hidden lg:block rounded-lg lg:w-1/3 aspect-video object-cover shadow-[10px_10px_rgba(57,_153,_103,_1)]' alt="" />
 			</div>
 			<div className='relative'>
 				<svg width="100%" height="100%" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" className="wave fill-[#39996B] transition duration-300 ease-in-out delay-150 p-0 m-0 z-0">
@@ -57,7 +57,11 @@ const About = () => {
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
 							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="revati.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Revati Tambe<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
+<<<<<<< HEAD
 							<h6 className='text-[#5E5E5E] flex-grow'>Revati Tambe has been working in the real estate industry for over 7 years. She serves as a developer for housing economics and finance.</h6>
+=======
+							<h6 className='text-[#5E5E5E] flex-grow'>An engineer interested in applying her skills to solve socioeconomic problems. Committed to making a tangible impact by designing technical solutions that make a difference.</h6>
+>>>>>>> 57bcbe40436731c4f6da7d45bfc6753defaebdc1
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
 								<TwitterLogoIcon width="20" height="20" />
 								<LinkedInLogoIcon width="20" height="20" />

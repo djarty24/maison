@@ -77,13 +77,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-
 			<img className='w-full hidden md:block pt-8' src="/stats.png" alt="Stats" />
-
-			<div>
-
-			</div>
-
 		</div>
 	);
 };
