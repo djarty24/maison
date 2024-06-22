@@ -57,7 +57,7 @@ const About = () => {
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
 							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="revati.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Revati Tambe<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
-							<h6 className='text-[#5E5E5E] flex-grow'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+							<h6 className='text-[#5E5E5E] flex-grow'>Revati Tambe has been working in the real estate industry for over 7 years. She serves as a developer for housing economics and finance.</h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
 								<TwitterLogoIcon width="20" height="20" />
 								<LinkedInLogoIcon width="20" height="20" />
@@ -66,7 +66,7 @@ const About = () => {
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
 							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="meghna.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Meghna Shenoy<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
-							<h6 className='text-[#5E5E5E] flex-grow'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+							<h6 className='text-[#5E5E5E] flex-grow'>Meghna Shenoy has been working in the property management industry for over 6 years. She has worked on various projects, aiming to give back to the community.</h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
 								<TwitterLogoIcon width="20" height="20" />
 								<LinkedInLogoIcon width="20" height="20" />
