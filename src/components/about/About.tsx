@@ -54,7 +54,7 @@ const About = () => {
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
 							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="revati.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Revati Tambe<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
-							<h6 className='text-[#5E5E5E] flex-grow'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+							<h6 className='text-[#5E5E5E] flex-grow'>An engineer interested in applying her skills to solve socioeconomic problems. Committed to making a tangible impact by designing technical solutions that make a difference.</h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
 								<TwitterLogoIcon width="20" height="20" />
 								<LinkedInLogoIcon width="20" height="20" />
