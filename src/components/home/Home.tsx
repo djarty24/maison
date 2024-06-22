@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 
 const Home = () => {
 	
@@ -19,7 +19,8 @@ const Home = () => {
 			<div className='p-8s w-full flex flex-col items-center'>
 				<h2 className='text-center lg:text-3xl'>Our Mission</h2>
 				<p className='text-center px-8 pb-8 sm:w-2/3 md:w-1/2 lg:w-5/12'>Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, warmth.</p>
-			</div>
+			</div>  
+			{/* git add .  */}
 
 			<div className='w-full overflow-hidden py-8'>
 				<div className='flex gap-5 items-center animate-scroll md:gap-16'>
