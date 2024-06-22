@@ -42,7 +42,7 @@ const About = () => {
 					<p>At Maison, we're more than just a name. We're a team of passionate individuals committed to making a <span className='text-[#39996B] font-semibold'>difference</span>.<br /><br />Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, <span className='text-[#39996B] font-semibold'>warmth</span>.</p>
 				</div>
 				{/* <img className='hidden lg:w-1/3 lg:block' src="/mobile-home.png" alt="" /> */}
-				<img src="mobile-home.png" className='rounded-lg lg:w-1/3 aspect-video object-cover shadow-[10px_10px_rgba(57,_153,_103,_1)]' alt="" />
+				<img src="mobile-home.png" className='hidden lg:block rounded-lg lg:w-1/3 aspect-video object-cover shadow-[10px_10px_rgba(57,_153,_103,_1)]' alt="" />
 			</div>
 			<div className='relative'>
 				<svg width="100%" height="100%" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" className="wave fill-[#39996B] transition duration-300 ease-in-out delay-150 p-0 m-0 z-0">
