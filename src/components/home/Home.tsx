@@ -61,7 +61,7 @@ const Home = () => {
 							</div>
 						</div>
 						<div className='w-full lg:flex items-center justify-center lg:justify-start pt-6 hidden'>
-						<button className="button" onClick={() => { window.location.href = '/register'; }}>Register</button>
+                        <Link to={'/register'}><div className='button'>Register</div></Link>
 						</div>
 					</div>
 					<img className='rounded-lg lg:w-1/2 shadow-[20px_20px_rgba(242,_185,_92,_1)]' src="gala-2.webp" alt="" />

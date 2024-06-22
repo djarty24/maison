@@ -34,7 +34,7 @@ const Navbar = () => {
                     <li><NavItem to="/about" currentPath={location.pathname}>About</NavItem></li>
                     <li><NavItem to="/contact" currentPath={location.pathname}>Contact</NavItem></li>
                     <li><NavItem to="/donate" currentPath={location.pathname}>Donate</NavItem></li>
-                    <li><div className='button button-inverse m-0'><NavItem to="/register" currentPath={location.pathname}>Register</NavItem></div></li>
+                    <li><NavItem to="/register" currentPath={location.pathname}><div className='button button-inverse m-0'>Register</div></NavItem></li>
                 </ul>
             </div>
 
