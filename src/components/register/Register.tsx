@@ -139,7 +139,7 @@ function RegistrationForm() {
 							value={formData.firstName}
 							onChange={handleChange}
 							placeholder="First Name"
-							className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2 mr-2"
+							className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2 mr-2"
 							required
 						/>
 						<input
@@ -148,7 +148,7 @@ function RegistrationForm() {
 							value={formData.lastName}
 							onChange={handleChange}
 							placeholder="Last Name"
-							className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2 ml-2"
+							className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2 ml-2"
 							required
 						/>
 					</div>
@@ -158,7 +158,7 @@ function RegistrationForm() {
 						value={formData.email}
 						onChange={handleChange}
 						placeholder="Your Email"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2"
 						required
 					/>
 					<input
@@ -167,7 +167,7 @@ function RegistrationForm() {
 						value={formData.phoneNumber}
 						onChange={handleChange}
 						placeholder="Phone Number"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2"
 						required
 					/>
 					<input
@@ -176,7 +176,7 @@ function RegistrationForm() {
 						value={formData.cardNumber}
 						onChange={handleChange}
 						placeholder="Card Number"
-						className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2"
 						required
 					/>
 					<div className="flex flex-row justify-evenly w-full">
@@ -186,7 +186,7 @@ function RegistrationForm() {
 							value={formData.expirationDate}
 							onChange={handleChange}
 							placeholder="MM/YY"
-							className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2 mr-2"
+							className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2 mr-2"
 							required
 						/>
 						<input
@@ -195,7 +195,7 @@ function RegistrationForm() {
 							value={formData.cvc}
 							onChange={handleChange}
 							placeholder="CVC"
-							className="w-full italic border-[3px] border-[#39996B] rounded-xl p-2 my-2 ml-2"
+							className="w-full italic border-[2px] border-[#39996B] rounded-xl p-2 my-2 ml-2"
 							required
 						/>
 					</div>

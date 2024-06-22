@@ -41,7 +41,7 @@ const Contact = () => {
 						value={formData.name}
 						onChange={handleChange}
 						placeholder="Your Name"
-						className="w-full italic border-[3px] border-[#39996B] rounded-lg p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 						required
 					/>
 					<input
@@ -50,7 +50,7 @@ const Contact = () => {
 						value={formData.email}
 						onChange={handleChange}
 						placeholder="Your Email"
-						className="w-full italic border-[3px] border-[#39996B] rounded-lg p-2 my-2"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2"
 						required
 					/>
 					<textarea
@@ -58,7 +58,7 @@ const Contact = () => {
 						value={formData.message}
 						onChange={handleChange}
 						placeholder="Your Message"
-						className="w-full italic border-[3px] border-[#39996B] rounded-lg p-2 my-2 h-32"
+						className="w-full italic border-[2px] border-[#39996B] rounded-lg p-2 my-2 h-32"
 						required
 					></textarea>
 					<div className="button button-inverse" onClick={() => alert("Your form has been submitted!")}>Submit</div>
