@@ -55,7 +55,7 @@ const About = () => {
 					<h1 className='text-white px-8 lg:p-8'>Meet the Team</h1>
 					<div className='bg-white rounded-md mx-4 md:m-0 p-8 lg:p-16 flex flex-col md:flex-row gap-5 md:gap-8'>
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
-							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="revati.png" alt="" />
+							<img className='aspect-square object-cover rounded-lg mx-auto md:mx-0' src="revati.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Revati Tambe<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
 							<h6 className='text-[#5E5E5E] flex-grow'>An engineer interested in applying her skills to solve socioeconomic problems. Committed to making a tangible impact by designing technical solutions that make a difference.</h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
@@ -64,7 +64,7 @@ const About = () => {
 							</div>
 						</div>
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
-							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="meghna.png" alt="" />
+							<img className='aspect-square object-cover rounded-lg mx-auto md:mx-0' src="meghna.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Meghna Shenoy<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
 							<h6 className='text-[#5E5E5E] flex-grow'>Meghna Shenoy has been working in the property management industry for over six years. She has worked on various projects in relation to housing, aiming to give back to her community. </h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
@@ -73,7 +73,7 @@ const About = () => {
 							</div>
 						</div>
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
-							<img className='aspect-square rounded-lg mx-auto md:mx-0' src="anoushka.png" alt="" />
+							<img className='aspect-square object-cover rounded-lg mx-auto md:mx-0' src="anoushka.png" alt="" />
 							<h3 className='pt-3 leading-relaxed'>Anoushka Rathi<br /><span className='text-[#39996B] text-base sm:text-lg md:text-xl font-semibold'>Co-Founder</span></h3>
 							<h6 className='text-[#5E5E5E] flex-grow'>Anoushka Rathi has been working the housing industry for over eight years. She has worked with government officials to improve upon the current housing policies.</h6>
 							<div className='flex flex-row justify-center md:justify-start gap-3 my-5'>
