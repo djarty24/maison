@@ -6,6 +6,7 @@ import Contact from './components/contact/Contact';
 import Donate from './components/donate/Donate';
 import Register from "./components/register/Register";
 import Footer from './components/footer/Footer';
+import ScrollToTop from "./components/ScrollToTop";
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
         <BrowserRouter>
+            <ScrollToTop />
         	<Navbar />
         		<Routes>
         			<Route path='/' element={< Home/>}></Route>

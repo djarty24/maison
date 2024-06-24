@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <footer className='bg-[#2F261B] text-white m-0'>
-            <div className='flex flex-col px-8 py-8 md:p-14 gap-5 md:flex-row md:justify-between md:items-center'>
+            <div className='flex flex-col px-8 py-8 md:p-14 md:py-8 gap-5 md:flex-row md:justify-between md:items-center'>
                 <div className='flex flex-col justify-between gap-12 md:w-1/2'>
                     <div>
                         <p className='text-white'>Sign up for our email list!</p>
@@ -25,6 +25,7 @@ const Footer = () => {
                             <ul className=''>
                                 <li><Link to={"/"}>Home</Link></li>
                                 <li><Link to={"/about"}>About</Link></li>
+                                <li><Link to={"/contact"}>Contact</Link></li>
                                 <li><Link to={"/donate"}>Donate</Link></li>
                                 <li><Link to={"/register"}>Register</Link></li>
                             </ul>
