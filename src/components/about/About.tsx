@@ -1,9 +1,52 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TwitterLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.css'
 
-const About = () => {
-	return (
+gsap.registerPlugin(ScrollTrigger);
+
+const About: React.FC = () => {
+
+    useEffect(() => {
+      // Define the animations for sections that should rise up
+      gsap.utils.toArray<HTMLElement>(".animate-rise").forEach((section) => {
+        gsap.fromTo(section, 
+          { opacity: 0, y: 50 }, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 5,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              end: "top 50%",
+              scrub: true,
+            }
+          });
+      });
+  
+      // Define the animations for sections that should only fade in
+      gsap.utils.toArray<HTMLElement>(".animate-fade").forEach((section) => {
+        gsap.fromTo(section, 
+          { opacity: 0 }, 
+          {
+            opacity: 1,
+            duration: 3,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              end: "top 50%",
+              scrub: true,
+            }
+          });
+      });
+    }, []);
+
+    return (
 		<div className='mt-20 md:mt-24 relative'>
 			<div className="w-full h-[88vh] relative">
 				<img className="w-full h-full object-cover absolute" src="about-header.png" alt="" />
@@ -13,7 +56,7 @@ const About = () => {
 					<h1 className="font-extrabold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white opacity-55">This is Maison.</h1>
 				</div>
 			</div>
-			<div className='bg-[#F2FCF7] flex flex-col p-8 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
+			<div className='animate-fade bg-[#F2FCF7] flex flex-col p-8 md:flex-row md:justify-evenly md:gap-4 lg:gap-8 lg:p-16 md:items-stretch'>
 				<h2 className='border-b-2 md:border-b-0 md:border-r-2 border-black md:w-1/3 md:h-auto flex items-center'>Our Vision</h2>
 				<div className='md:w-1/3'>
 					<h2 className='text-[#39996B]'>For the People</h2>
@@ -24,11 +67,11 @@ const About = () => {
 					<p>Our mission is to provide energy-efficient mobile homes, reducing waste and benefiting both society and the environment by reducing the amount of people struggling to find homes.</p>
 				</div>
 			</div>
-			<div className='bg-[#2F261B] p-8 flex flex-col md:flex-row md:justify-between items-center gap-5'>
+			<div className='animate-fade bg-[#2F261B] p-8 flex flex-col md:flex-row md:justify-between items-center gap-5'>
 				<h2 className='text-center md:text-left text-white text-xl md:text-3xl lg:text-5xl m-0'>Join us in ensuring <span className="italic">everyone</span> has a home.</h2>
 				<Link to="/register"><div style={{ fontFamily: 'Raleway' }} className="m-0 w-fit h-fit hover:font-semibold hover:border-white hover:bg-[#2F261B] hover:text-white text-xl bg-white font-medium border-2 border-solid border-[#2F261B] text-[#2F261B] rounded-lg py-1 px-4 transition-colors duration-500 text-center">Register</div></Link>
 			</div>
-			<div className='p-8 flex flex-col lg:flex-row gap-16 md:justify-evenly lg:p-16 bg-[#FFF2DB] lg:m-auto'>
+			<div className='animate-rise p-8 flex flex-col lg:flex-row gap-16 md:justify-evenly lg:p-16 bg-[#FFF2DB] lg:m-auto'>
 				<img src="about-mission.png" className='rounded-lg lg:w-1/2 aspect-video object-cover shadow-[-20px_20px_rgba(242,_185,_92,_1)]' alt="" />
 				<div className='lg:text-left text-center lg:w-1/2 lg:flex lg:flex-col lg:justify-evenly'>
 					<h2>We build <span className='text-[#39996B]'>one home at a time.</span></h2>
@@ -36,7 +79,7 @@ const About = () => {
 					<h2>Questions? <span className='text-[#39996B]'>Contact Us!</span></h2>
 				</div>
 			</div>
-			<div className='px-8 pt-8 md:p-16 md:pb-0 flex flex-row justify-between lg:-mb-32 xl:-mb-36'>
+			<div className='animate-rise px-8 pt-8 md:p-16 md:pb-0 flex flex-row justify-between lg:-mb-32 xl:-mb-36'>
 				<div className='text-center lg:text-left lg:w-1/2'>
 					<h2 className='font-normal'>We’re here to get as many people <span className='text-[#39996B] font-semibold'>secure</span> as possible</h2>
 					<p>At Maison, we're more than just a name. We're a team of passionate individuals committed to making a <span className='text-[#39996B] font-semibold'>difference</span>.<br /><br />Our mission is to provide shelter and protection for poverty-stricken individuals or families. We're dedicated to serving our community with our love, affection, and most importantly, <span className='text-[#39996B] font-semibold'>warmth</span>.</p>
@@ -44,14 +87,14 @@ const About = () => {
 				{/* <img className='hidden lg:w-1/3 lg:block' src="/mobile-home.png" alt="" /> */}
 				<img src="mobile-home.png" className='hidden rounded-lg lg:block lg:w-1/3 aspect-video object-cover shadow-[10px_10px_rgba(57,_153,_103,_1)]' alt="" />
 			</div>
-			<div className='relative'>
+			<div className='animate-rise relative'>
 				<svg width="100%" height="100%" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" className="wave fill-[#39996B] transition duration-300 ease-in-out delay-150 p-0 m-0 z-0">
 				{/* <path d="M 0,600 L 0,150 C 88,139.7799043062201 176,129.5598086124402 268,148 C 360,166.4401913875598 456,213.54066985645932 553,221 C 650,228.45933014354068 747.9999999999999,196.2775119617225 841,167 C 934.0000000000001,137.7224880382775 1022,111.34928229665071 1121,109 C 1220,106.65071770334929 1330,128.32535885167465 1440,150 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="#39996B" fillOpacity="0.2" className="transition-all duration-300 ease-in-out delay-150 path-0"></path> */}
 					<path d="M 0,600 L 0,150 C 88,139.7799043062201 176,129.5598086124402 268,148 C 360,166.4401913875598 456,213.54066985645932 553,221 C 650,228.45933014354068 747.9999999999999,196.2775119617225 841,167 C 934.0000000000001,137.7224880382775 1022,111.34928229665071 1121,109 C 1220,106.65071770334929 1330,128.32535885167465 1440,150 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="#39996B" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-0"></path>
 					<path d="M 0,600 L 0,350 C 95.49282296650716,332.3923444976076 190.98564593301433,314.7846889952153 290,328 C 389.0143540669857,341.2153110047847 491.5502392344499,385.25358851674645 590,399 C 688.4497607655501,412.74641148325355 782.8133971291865,396.20095693779905 865,394 C 947.1866028708135,391.79904306220095 1017.1961722488038,403.9425837320574 1111,399 C 1204.8038277511962,394.0574162679426 1322.401913875598,372.0287081339713 1440,350 L 1440,600 L 0,600 Z" stroke="none" strokeWidth="0" fill="#39996B" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-1"></path>
 					
 				</svg>
-				<div className='relative md:w-5/6 lg:w-4/5 m-auto -mt-16 md:-mt-32 lg:-mt-64 z-10'>
+				<div className='animate-fade relative md:w-5/6 lg:w-4/5 m-auto -mt-16 md:-mt-32 lg:-mt-64 z-10'>
 					<h1 className='text-white px-8 lg:p-8'>Meet the Team</h1>
 					<div className='bg-white rounded-md mx-4 md:m-0 p-8 lg:p-16 flex flex-col md:flex-row gap-5 md:gap-8'>
 						<div className='text-center md:text-left flex-1 flex flex-col min-h-full'>
