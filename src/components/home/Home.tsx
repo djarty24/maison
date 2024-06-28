@@ -54,8 +54,8 @@ const Home: React.FC = () => {
           <Link to={'/register'}><div className='button'>Join Us</div></Link>
         </div>
       </div>
-      <img className='animate-rise w-full lg:hidden py-14' src="/hero-small.png" alt="" />
-      <img className='animate-rise hidden lg:block pb-16' src="/hero-large.png" alt="" />
+      <img className='w-full lg:hidden py-14' src="/hero-small.png" alt="" />
+      <img className='hidden lg:block pb-16' src="/hero-large.png" alt="" />
 
       <div className='animate-rise p-8 w-full flex flex-col items-center'>
         <h2 className='text-center lg:text-3xl'>Our Mission</h2>
