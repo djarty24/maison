@@ -36,6 +36,7 @@ const Footer = () => {
                                 <li><Link to={"/"}>Privacy Policy</Link></li>
                                 <li><Link to={"/"}>Cookie Policy</Link></li>
                                 <li><Link to={"/"}>Terms and Conditions</Link></li>
+                                <li><a target='_blank' href="/statement-of-assurance.pdf">Statement of Assurance</a></li>
                             </ul>
                         </div>
                     </div>
